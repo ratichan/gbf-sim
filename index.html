@@ -56,7 +56,7 @@
         <button ng-click="clearAllChecked()"><span>clear all check</span></button>
     </div>
     <div ng-repeat="type in ['l', 'p']">
-        <div ng-repeat="elem in ['f', 'w', 'e', 'g', 'l', 'd']" class="gachaTable">
+        <div ng-repeat="elem in ['f']" class="gachaTable">
             <div ng-repeat="gacha in gachaDatabase|filter :{type: type, element: elem }  : true">
                 <input type="checkbox" ng-model="gacha.checked"><span>{{gacha.name}}</span></input>    
                 <span ng-if="gacha.totalGet > 0" class="totalRoll">{{gacha.totalGet}}</span>
@@ -66,8 +66,8 @@
     </div>
     <div ng-show="rollList.length > 0">
         <div>
-            <span>Total ☆5 you get: {{totalSsr}}</span>
-            <span>SSR drop rate: {{totalSsr / totalRoll * 100 | number:2}}%</span>
+            <span>Total ☆5 you get: {{totalSsr}} </span>
+            <span>(drop rate: {{totalSsr / totalRoll * 100 | number:2}}%)</span>
         </div>
         <label>Show details:<input type="checkbox" ng-model="showDetails"></label>
         <br/>
