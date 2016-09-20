@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Granblue Fantasy Gacha Simulator</title>
+    <title>Tales of Asteria Gacha Simulator (Work in Progress)r</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chance/1.0.4/chance.min.js"></script>
@@ -37,17 +37,17 @@
 
 <body ng-app="gbfSim">
     <div ng-controller="GbfSimController">
-    <h2>Granblue Fantasy Gacha Simulator</h2>
+    <h2>Tales of Asteria Gacha Simulator (Work in Progress)</h2>
     <p>Currently all gacha are assume equal drop rate.</p>
     <div>
         <input type="number" name="number of roll" ng-model="totalRoll" min="1" max="10000" required>
         <span>total money: {{totalRoll * 300}} yen</span>
         <br/>
         <label>
-            <input type="radio" ng-model="ssrRate" value="0.03"> Normal
+            <input type="radio" ng-model="ssrRate" ng-value="0.03"> 3%
         </label>
         <label>
-            <input type="radio" ng-model="ssrRate" ng-value="0.06"> Legend Fest
+            <input type="radio" ng-model="ssrRate" value="0.06"> 6%
         </label>
         <button ng-click="click()"><span>random</span></button>
     </div>
@@ -66,7 +66,7 @@
     </div>
     <div ng-show="rollList.length > 0">
         <div>
-            <span>Total SSR you get: {{totalSsr}}</span>
+            <span>Total ☆5 you get: {{totalSsr}}</span>
             <span>SSR drop rate: {{totalSsr / totalRoll * 100 | number:2}}%</span>
         </div>
         <label>Show details:<input type="checkbox" ng-model="showDetails"></label>
