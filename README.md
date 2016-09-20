@@ -1,4 +1,4 @@
 # gbf-sim
-Granblue Fantasy Gacha Simulator
+Gacha Simulator
 
-http://arvinman.github.io/gbf-sim/
+http://ratichan.github.io/gbf-sim/
