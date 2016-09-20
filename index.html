@@ -41,17 +41,14 @@
     <p>Currently all gacha are assume equal drop rate.</p>
     <div>
         <input type="number" name="number of roll" ng-model="totalRoll" min="1" max="10000" required>
-        <span>total money: {{totalRoll * 300}} yen</span>
-        <span>, total stones: {{totalRoll * 5}}</span>
+        <span>total: {{totalRoll * 300}} yen, {{totalRoll * 5}} stones</span>
         <br/>
         <label>
-            <input type="radio" ng-model="ssrRate" ng-value="0.03" checked> 3%
+            <input type="radio" ng-model="ssrRate" value="0.03"> 3%
         </label>
-<!--
         <label>
-            <input type="radio" ng-model="ssrRate" value="0.06"> 6%
+            <input type="radio" ng-model="ssrRate" ng-value="0.03"> 3%
         </label>
--->
         <button ng-click="click()"><span>random</span></button>
     </div>
     <div>
