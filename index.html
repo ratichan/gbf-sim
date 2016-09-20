@@ -55,7 +55,7 @@
         <button ng-click="rollUntilFound()"><span>roll until get</span></button>
         <button ng-click="clearAllChecked()"><span>clear all check</span></button>
     </div>
-    <div ng-repeat="type in ['c', 'lc', 'ec', 'w', 's']">
+    <div ng-repeat="type in ['l', 'p']">
         <div ng-repeat="elem in ['f', 'w', 'e', 'g', 'l', 'd']" class="gachaTable">
             <div ng-repeat="gacha in gachaDatabase|filter :{type: type, element: elem }  : true">
                 <input type="checkbox" ng-model="gacha.checked"><span>{{gacha.name}}</span></input>    
