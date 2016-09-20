@@ -1,19 +1,13 @@
 [
-    { "type": "l", "element": "f", "name": "ユエル" },
-    { "type": "l", "element": "f", "name": "マギサ" },
-    { "type": "l", "element": "f", "name": "アギエルバ" },
-    { "type": "l", "element": "f", "name": "ゼタ" },
-    { "type": "l", "element": "f", "name": "クラリス" },
-    { "type": "l", "element": "f", "name": "パーシヴァル" },
-    { "type": "l", "element": "f", "name": "ガンダゴウザ" },
-    { "type": "l", "element": "f", "name": "ヘルエス" },
-
-    { "type": "p", "element": "w", "name": "アルタイル" },
-    { "type": "p", "element": "w", "name": "リリィ" },
-    { "type": "p", "element": "w", "name": "シャルロッテ" },
-    { "type": "p", "element": "w", "name": "ランスロット" },
-    { "type": "p", "element": "w", "name": "ソシエ" },
-    { "type": "p", "element": "w", "name": "シルヴァ" },
-    { "type": "p", "element": "w", "name": "ヨダルラーハ (SSR)" },
-    { "type": "p", "element": "w", "name": "リルル" }
+    { "type": "l", "element": "f", "name": "Sorey Kamui" },
+    { "type": "l", "element": "f", "name": "Reid ☆6" },
+    { "type": "l", "element": "f", "name": "Emil ☆6" },
+	
+    { "type": "p", "element": "f", "name": "Sorey" },
+    { "type": "p", "element": "f", "name": "Zelos" },
+    { "type": "p", "element": "f", "name": "Ludger" },
+    { "type": "p", "element": "f", "name": "Veige" },
+    { "type": "p", "element": "f", "name": "Stahn" },
+    { "type": "p", "element": "f", "name": "Tear" },
+    { "type": "p", "element": "f", "name": "Elise" }
 ]
